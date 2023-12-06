@@ -1,0 +1,208 @@
+
+
+.inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    width: 670px;
+    height: 500px;
+    margin-left: 500px;
+}
+
+.logoColegio{
+    width: 650px;
+    height: 350px;
+    
+}
+
+.loginIn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+
+.usuario{
+    border-radius: 15px;
+    height: 25px;
+    width: 200px; 
+    margin-left: 550px; 
+}
+
+.contraseña{
+    border-radius: 15px;
+    height: 25px;
+    width: 200px;
+       
+}
+
+.botonEntrar{
+    border-radius: 15px;
+    height: 30px;
+    width: 150px;
+
+}
+
+.busqueda-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: flex-start;
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.logoColegio1{
+    width: 200px;
+    padding: 0px;
+    border-radius: 55%;
+    margin-top: -35px;
+    display: none;
+
+}
+
+.busqueda{
+    border-radius: 15px;
+    width: 500px;
+    height: 35px;
+    display: none;
+    
+}
+
+.botonBusqueda{
+    border-radius: 15px;
+    height: 35px;
+    display:none;
+}
+
+.cerrar{
+    border-radius: 15px;
+    height: 35px;
+    display: none;
+    margin-left: 500px;
+
+}
+
+.contenedor-grupos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    margin: 300px;
+       
+}
+
+.H{
+    display: none;
+    color: white;
+    background-color: rgb(27, 158, 212);
+    font-size: 20px;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    
+}
+
+.V{
+    color: white;
+    background-color: rgb(18, 19, 21);
+    font-size: 20px;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    display: none;
+    }
+
+.A{
+    color: white;
+    background-color:rgb(48, 49, 52);
+    font-size: 20px;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    display:none; 
+}
+
+.regresar{
+    border-radius: 15px;
+    display: none;
+}
+
+.lista-alumnos, .lista-alumnosV, .lista-alumnosA{
+    display: flex;
+    justify-self: flex-start;
+    justify-content: center;
+    font-size: 15px;
+    margin: 55px;
+    display: none;
+    text-align: center;
+}
+
+.new-student, .new-studentV, .new-studentAnti{
+    display: flex;
+    justify-content: center;
+    justify-self: flex-start;
+    margin-top: -500px;
+    display: none;
+    text-align: center;
+}
+
+#nombre, #apellido, #calificacion, #habilidad, #fuerza, #poder, #alias{
+    border-radius: 5px;
+}
+
+#nombreV, #apellidoV, #calificacionV, #habilidadV, #fuerzaV, #poderV, #aliasV{
+    border-radius: 5px;
+}
+
+#nombreA, #apellidoA, #calificacionA, #habilidadA, #fuerzaA, #poderA, #aliasA{
+    border-radius: 5px;
+}
+
+
+#funcionesH, #funcioneV, #funcionesAnti{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+
+}
+
+#promedioA{
+    border-radius: 15px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 350px;
+}
+
+
+#promedioV{
+    border-radius: 15px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 350px;
+}
+
+
+ #promedioH{
+    border-radius: 15px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 350px;
+
+ 
+}

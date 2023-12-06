@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto: Base de datos de alumnos</title>
+    <link rel="shortcut icon" href="css/imagen/colegio-design-sketch-name.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <div id="inicioIn" class="Inicio">
+        <div id="contenedor" class="logo">
+            <img id="logoEntrada" class="logoColegio" src="css/imagen/colegio-design-sketch-name.png" alt="logo">
+        </div>
+        <div id="entran" class="loginIn">
+            <input id="usuarioDocente" class="usuario" type="text" placeholder="Usuario..." required='required'>
+            <input id="contraseña1" class="contraseña" type="password" placeholder="Contraseña..." required='required'>
+            <input id="interaccion" class="botonEntrar" type="button" value="Entrar">
+        </div>
+    </div>
+
+    <div>
+        <div id="barra" class="contenedor-busqueda">
+            <img id="logo2" class="logoColegio1" src="css/imagen/colegio-design-sketch-name.png" alt="logo">
+            <input id="busqueda1" class="busqueda" type="search" placeholder="Busqueda...">
+            <input id="botondeBusqueda1" class="botonBusqueda" type="button" value="Buscar" onclick="buscarAlumno()">
+            <input type="button" value="cerrar sesion" class="cerrar" id="cerrarS">
+        </div>
+    </div>
+
+    <div>
+        <div id="grupos" class="contenedor-grupos">
+            <input type="button" value="HEROES" id="Gheroes" class="H">
+            <input type="button" value="VILLANOS" id="Gvillanos" class="V">
+            <input type="button" value="ANTIHEROES" id="Gantiheroes" class="A">
+            <input type="button" value="Regresar" class="regresar" id="back">
+        </div>
+    </div>
+
+    <section id="newHero" class="new-student">
+        <input type="text" placeholder="Nombre" id="nombre">
+        <input type="text" placeholder="Apellido" id="apellido">
+        <input type="number" placeholder="Calificacion" id="calificacion">
+        <input type="number" placeholder="Habilidad" id="habilidad">
+        <input type="number" placeholder="Fuerza" id="fuerza">
+        <input type="text" placeholder="Poder" id="poder">
+        <input type="text" placeholder="Alias" id="alias">
+        <button onclick="agregarAlumno()">Agregar</button>
+    </section>
+
+    <section id="listHero" class="lista-alumnos">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Calificacion</th>
+                    <th>Habilidad</th>
+                    <th>Fuerza</th>
+                    <th>Poder</th>
+                    <th>Alias</th>
+                    <th>Promedio</th>
+
+                </tr>
+            </thead>
+            <tbody id="students">
+            </tbody>
+        </table>
+
+        <div id="funcionesH">
+            <button id="promedioH" onclick="promedioH()">Promedio del Grupo</button>
+
+        </div>
+
+    </section>
+
+    <section id="newVillian" class="new-studentV">
+        <input type="text" placeholder="Nombre" id="nombreV">
+        <input type="text" placeholder="Apellido" id="apellidoV">
+        <input type="number" placeholder="Calificacion" id="calificacionV">
+        <input type="number" placeholder="Habilidad" id="habilidadV">
+        <input type="number" placeholder="Fuerza" id="fuerzaV">
+        <input type="text" placeholder="Poder" id="poderV">
+        <input type="text" placeholder="Alias" id="aliasV">
+        <button onclick="agregarAlumnoV()">Agregar</button>
+    </section>
+
+    <section id="listVillian" class="lista-alumnosV">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Calificacion</th>
+                    <th>Habilidad</th>
+                    <th>Fuerza</th>
+                    <th>Poder</th>
+                    <th>Alias</th>
+                    <th>Promedio</th>
+
+                </tr>
+            </thead>
+            <tbody id="studentsV">
+            </tbody>
+        </table>
+
+        <div id="funcionesV">
+            <button id="promedioV" onclick="promedioVillano()">Promedio del Grupo</button>
+
+        </div>
+    </section>
+
+    <section id="newAntiHeroe" class="new-studentAnti">
+        <input type="text" placeholder="Nombre" id="nombreA">
+        <input type="text" placeholder="Apellido" id="apellidoA">
+        <input type="number" placeholder="Calificacion" id="calificacionA">
+        <input type="number" placeholder="Habilidad" id="habilidadA">
+        <input type="number" placeholder="Fuerza" id="fuerzaA">
+        <input type="text" placeholder="Poder" id="poderA">
+        <input type="text" placeholder="Alias" id="aliasA">
+        <button onclick="agregarAlumnoAntiHeroe()">Agregar</button>
+    </section>
+
+    <section id="listAntiHeroe" class="lista-alumnosA">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Calificacion</th>
+                    <th>Habilidad</th>
+                    <th>Fuerza</th>
+                    <th>Poder</th>
+                    <th>Alias</th>
+                    <th>Promedio</th>
+
+                </tr>
+            </thead>
+            <tbody id="studentsAnti">
+            </tbody>
+        </table>
+        <div id="funcionesAnti">
+
+            <button id="promedioA" onclick="promedioAntiH()">Promedio del Grupo</button>
+        </div>
+
+    </section>
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
